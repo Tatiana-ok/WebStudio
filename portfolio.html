@@ -52,16 +52,16 @@
     <main>
         <section class="section">
             <div class="conteiner">
-                <h1 class="none">Наши работы</h1>
+                <h1 >Наши работы</h1>
                 <ul class="filter flex-secondary">
-                    <li class="fil-item"><button type="button" class="fil-button">Все</button></li>
-                    <li class="fil-item"><button type="button" class="fil-button">Веб-сайты</button></li>
-                    <li class="fil-item"><button type="button" class="fil-button">Приложения</button></li>
-                    <li class="fil-item"><button type="button" class="fil-button">Дизайн</button></li>
-                    <li class="fil-item"><button type="button" class="fil-button">Маркетинг</button></li>
+                    <li data-value="all" class="fil-item"><button type="button" class="fil-button">Все</button></li>
+                    <li data-value="website" class="fil-item"><button type="button" class="fil-button">Веб-сайты</button></li>
+                    <li data-value="application" class="fil-item"><button type="button" class="fil-button">Приложения</button></li>
+                    <li data-value="design" class="fil-item"><button type="button" class="fil-button">Дизайн</button></li>
+                    <li data-value="marketing" class="fil-item"><button type="button" class="fil-button">Маркетинг</button></li>
                 </ul>
                 <ul class="list flex-secondary">
-                    <li class="item">
+                    <li class="item website">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/background-1.jpg" width="370" alt="Постер Технокряк">
@@ -75,7 +75,7 @@
                             </div> 
                         </a>
                     </li>
-                    <li class="item">
+                    <li class="item design">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/pic-2.jpg" width="370" alt="Постер New Orlean vs Golden Star">
@@ -91,7 +91,7 @@
                         </a>
                         
                     </li>
-                    <li class="item">
+                    <li class="item application">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/pic-3.jpg" width="370" alt="Постер Seafood">
@@ -104,9 +104,8 @@
                                 <p class="description">Приложение</p>
                             </div>
                         </a>
-                    
                     </li>
-                    <li class="item">
+                    <li class="item marketing">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/pic-4.jpg" width="370" alt="Постер Prime">
@@ -122,7 +121,7 @@
                         </a>
                         
                     </li>
-                    <li class="item">
+                    <li class="item application">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/pic-5.jpg" width="370" alt="Постер Boxes">
@@ -138,7 +137,7 @@
                         </a>
                         
                     </li>
-                    <li class="item">
+                    <li class="item website">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/pic-6.jpg" width="370" alt="Постер Inspiration has no Borders">
@@ -154,7 +153,7 @@
                         </a>
                         
                     </li>
-                    <li class="item">
+                    <li class="item design">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/pic-7.jpg" width="370" alt="Постер Limited Edition">
@@ -168,7 +167,7 @@
                         </a>
                         
                     </li>
-                    <li class="item">
+                    <li class="item marketing">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/pic-8.jpg" width="370" alt="Постер LAB">
@@ -182,7 +181,7 @@
                         </a>
                         
                     </li>
-                    <li class="item">
+                    <li class="item application">
                         <a href="" class="list-link">
                             <div class="list-anime">
                                 <img src="./image/Portfolio/pic-9.jpg" width="370" alt="Постер Growing Business">
@@ -192,16 +191,11 @@
                                 <h2 class="list-artical">Growing Business</h2>
                                 <p class="description">Приложение</p>
                             </div>
-                            
                         </a>
-                        
                     </li>
                 </ul>
             </div>
         </section>
-        
-        
-
     </main>
     <footer class="section-footer">
         <div class="conteiner flex">
@@ -260,6 +254,7 @@
         </div>
         <p class="caption">2020 | Developed by GoIT Students</p>
     </footer>
+    <script src="/js/portfolioFilter.js"></script>
 </body>
 </html>
 
