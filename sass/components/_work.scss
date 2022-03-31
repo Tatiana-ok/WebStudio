@@ -1,0 +1,38 @@
+/* Чем мы занимаемся */
+
+
+.icon-work {
+    display: block;
+    margin-top: 0;
+}
+
+.title-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--secondary-text-color);
+    line-height: 1.17;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.work-img {
+    position: relative;
+}
+
+.work-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}

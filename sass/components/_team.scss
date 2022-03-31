@@ -1,0 +1,78 @@
+/* Наша команда */
+
+.section-team {
+    padding-bottom: 94px;
+    padding-top: 94px;
+    background-color: var(--secondary-background-color);
+}
+
+.team-item {
+    width: 270px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.icon-team {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.team-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.team-job {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--primary-text-color);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.team-link {
+    padding-bottom: 24px;
+    justify-content: center;
+}
+
+.team-link li {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.network {
+    width: 20px;
+    height: 20px;
+
+    .network-link:hover &,
+    .network-link:focus & {
+        fill: #ffffff;
+    }
+}
+
+.network-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    fill: #afb1b8;
+    border-radius: 50px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+    }
+}
