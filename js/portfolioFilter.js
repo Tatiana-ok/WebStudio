@@ -1,15 +1,12 @@
 const items = document.querySelectorAll('.item');
-let f = document.querySelector('.filter').addEventListener('click', (event) => {
-    if(event.target.tagName !== 'LI') return false;
-    let filterClass = event.target.dataset['value'];
-    console.log(filterClass);
 
+let f = document.querySelector('.filter').addEventListener('click', (event) => {
+    if(event.target.tagName !== 'BUTTON') return false;
+    let filterClass = event.target.dataset['value'];
     items.forEach((elem) => {
-        elem.classList.remove('hide');
+        elem.classList.remove('none');
         if(!elem.classList.contains(filterClass) && filterClass !== 'all'){
-            elem.classList.add('hide');
+            elem.classList.add('none');
         }
     });
 });
-
-console.log(f);

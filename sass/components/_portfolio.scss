@@ -155,13 +155,16 @@
 
 .hide {
     opacity: 1;
-  animation-name: a1;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
+    animation-name: anime;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+};
 
-@keyframes a1{
-    to {
+@keyframes anime {
+    0% {
+        opacity: 1;
+    };
+    100% {
           opacity: 0;
           min-height: 0; 
           min-width: 0;
@@ -169,4 +172,4 @@
           margin: 0;
           border: 0;
     } 
-}
+};
