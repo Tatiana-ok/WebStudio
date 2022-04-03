@@ -50,12 +50,27 @@
             </div>
         </header>
         <main>
-           
             <section class="hero">
-                <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button data-modal-open class="hero-link">
-                    Заказать услугу
-                </button>
+                <div class="slider">
+                    <img style="z-index: -1;" class="hero-img" src="./image/Header-img.jpg" alt="Команда">
+                    <img style="z-index: -2;" class="hero-img" src="./image/Header2-img.jpg" alt="Адаптивность"/>
+                    <img style="z-index: -3;" class="hero-img" src="./image/Header3-img.jpg" alt="Адаптивность"/>
+                </div>
+                <div style="text-align: center;">
+                    <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                    <button data-modal-open class="hero-link">
+                        Заказать услугу
+                    </button>
+                </div>
+                <!-- <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button> -->
+                <a class="prev">&#10094</a>
+                <a class="next">&#10095</a>
+                <div style="text-align: center;">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </section>
             <section class="section i">
                 <div class="conteiner">
@@ -452,6 +467,7 @@
         </footer>
 
         <script src="./js/modal.js"></script>
+        <script src="./js/slider.js"></script>
     </body>
 </html>
 
