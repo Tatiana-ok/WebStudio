@@ -3,11 +3,20 @@
 /* Герой */
 
 .hero {
+    position: relative;
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    // text-align: center;
+    overflow: hidden;
+}
+
+.background::before{
+    position: absolute;
+    content: ''; 
+    width: 100%;
+    height: 100%;
+    z-index: 2;
     background-image: linear-gradient( 
         to right, 
         rgba(47, 48, 58, 0.8), 
@@ -32,7 +41,11 @@
 // }
 
 .hero-title {
-    padding-top: 200px;
+    position: absolute;
+    z-index: 3;
+    top: calc(50% - 59.83px);
+    left: calc(50% - 301.62px);
+    // padding-top: 200px;
     font-weight: 900;
     font-size: 44px;
     color: #FFFFFF;
@@ -43,6 +56,10 @@
 }
 
 .hero-link {
+    position: absolute;
+    z-index: 3;
+    top: calc(50% + 70px);
+    left: calc(50% - 100.7px);
     display: inline-block;
     font-weight: 700;
     font-size: 16px; 
@@ -62,11 +79,10 @@
 .slider{
     position: relative;
     display: flex;
+    transition: all ease-in 1.5s;
 }
 
 .hero-img{
-    position: absolute;
-    // z-index: -1;
     background-color: var(--primary-text-color);
     left: 0;
 }
@@ -74,6 +90,7 @@
 .prev, .next {
     cursor: pointer;
     position: absolute;
+    z-index: 3;
     top: 50%;
     width: auto;
     margin-top: -22px;
@@ -90,15 +107,25 @@
 }
 
 .next {
-    right: 0;
+    right: 10px;
     border-radius: 3px 0 0 3px;
+}
+
+.prev{
+    left: 10px;
+}
+
+.dots{
+    position: absolute;
+    z-index: 3;
+    top: 95%;
+    left: calc(50% - 24px);
 }
 
 .dot {
     display: inline-block;
     height: 13px;
     width: 13px;
-    margin: 180px 2px;
     background-color: #bbb;
     border-radius: 50%;
     cursor: pointer;
@@ -110,15 +137,8 @@
 }
 
 // .fade{
-//     -webkit-animation-name:fade;
-//     -webkit-animation-durection: 1.5s;
 //     animation-name: fade;
 //     animation-duration: 1.5s;
-// }
-
-// @-webkit-keyframes fade{
-//     from{opacity: 4;}
-//     to{opacity: 1;}
 // }
 
 // @keyframes fade {
