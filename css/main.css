@@ -279,12 +279,12 @@ header .contacts ul {
 }
 
 .slider {
+  -webkit-transition: all ease 1.5s;
+  transition: all ease 1.5s;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all ease-in 1.5s;
-  transition: all ease-in 1.5s;
 }
 
 .hero-img {
@@ -306,9 +306,11 @@ header .contacts ul {
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  background-color: transparent;
+  border: none;
 }
 
-.prev:hover, .next:hover {
+.prev:hover, .prev:focus, .next:hover, .next:focus {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
@@ -339,8 +341,8 @@ header .contacts ul {
   transition: baground-color 0.6s ease;
 }
 
-.active, dot:hover {
-  background-color: #717171;
+.active, .dot:hover {
+  background-color: var(--accent-color);
 }
 
 /* Преимущества */
@@ -1136,7 +1138,6 @@ footer > .conteiner {
 }
 
 .text-img {
-  /*display: inline-block;*/
   position: absolute;
   opacity: 0.9;
   width: 370px;
@@ -1152,7 +1153,6 @@ footer > .conteiner {
   background-size: 370px 294px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
-  /*display: none;*/
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -1196,16 +1196,17 @@ footer > .conteiner {
 }
 
 .list {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: inline-block;
 }
 
 .list .item {
-  width: 370px;
+  min-width: 370px;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
   margin-bottom: 20px;
+  margin-right: 20px;
+  float: left;
 }
 
 .list .item:nth-last-child(-n + 3) {
@@ -1245,44 +1246,6 @@ footer > .conteiner {
 
 .none {
   display: none;
-}
-
-.hide {
-  opacity: 1;
-  -webkit-animation-name: anime;
-          animation-name: anime;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes anime {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    min-height: 0;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
-}
-
-@keyframes anime {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    min-height: 0;
-    min-width: 0;
-    padding: 0;
-    margin: 0;
-    border: 0;
-  }
 }
 
 #map {
