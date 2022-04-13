@@ -55,7 +55,13 @@ ul {
 }
 
 .section {
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1600px) {
+  .section {
+    padding-bottom: 94px;
+  }
 }
 
 .section-footer {
@@ -63,11 +69,23 @@ ul {
 }
 
 .conteiner {
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1200px;
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .conteiner {
+    width: 1600px;
+  }
 }
 
 .flex {
@@ -80,12 +98,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.flex-secondary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 /* Шапка страниц */
@@ -346,30 +358,68 @@ header .contacts ul {
 }
 
 /* Преимущества */
-.i {
-  padding-top: 94px;
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .advantages {
-  width: 270px;
-  margin-right: 30px;
-}
-
-.icon-conteiner {
-  width: 270px;
-  height: 120px;
-  background-color: var(--secondary-background-color);
   margin-bottom: 30px;
 }
 
+.advantages:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    width: 354px;
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .advantages {
+    min-width: 270px;
+    margin-right: 30px;
+  }
+  .advantages:last-child {
+    margin-right: 0;
+  }
+}
+
+.icon-conteiner {
+  width: 450px;
+  height: 120px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: var(--secondary-background-color);
+}
+
 .icon-conteiner::before {
-  width: 270px;
   height: 120px;
   background-color: var(--secondary-text-color);
 }
 
-.conteiner .advantages:last-child {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .icon-conteiner {
+    width: 354px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .icon-conteiner {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
 }
 
 .icon {
@@ -377,21 +427,43 @@ header .contacts ul {
   height: 70px;
   margin-top: 25px;
   margin-bottom: 25px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 190px;
+  margin-right: 190px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    margin-left: 142px;
+    margin-right: 142px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .icon {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
 .advantages-title {
+  width: 450px;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   color: var(--secondary-text-color);
   text-transform: uppercase;
   line-height: 1.14;
-  margin-bottom: 10px;
   margin-top: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .advantages-title {
+    text-align: center;
+  }
+}
+
 .advantages-text {
+  width: 450px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;

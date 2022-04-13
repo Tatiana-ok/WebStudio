@@ -35,8 +35,10 @@ ul {
 }
 
 .section {
-    padding-bottom: 94px;
-    
+    padding-bottom: 60px;
+    @media screen and (min-width: 1600px) {
+        padding-bottom: 94px;
+    }
 }
 
 .section-footer {
@@ -44,20 +46,24 @@ ul {
 }
 
 .conteiner {
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    width: 1200px;
-}
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    };
+    
+    @media screen and (min-width: 1600px) {
+        width: 1600px;
+    };
+};
 
 .flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     
-}
-
-.flex-secondary {
-    display: flex;
 }
