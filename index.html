@@ -11,8 +11,8 @@
     </head>
     <body>
         <header>
-            <div class="conteiner flex">
-                <nav class="nav flex">
+            <div class="conteiner">
+                <nav class="nav">
                     <a class="logo" href="./index.html"><span>Web</span> Studio</a>
                     <ul class="nav-title">
                         <li><a class="current link" href="./index.html">Студия</a></li>
@@ -20,10 +20,12 @@
                         <li><a class="link" href="./contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
-                
+                <svg class="menu">
+                    <use href="./image/symbol-defs.svg#icon-menu"></use>
+                </svg>
                 <address class="contacts">
                     <ul>
-                        <li class="flex-secondary contacts-item">
+                        <li>
                             
                             <a class="contacts-mail" href="mailto:info@devstudio.com">
                                 <div>
@@ -34,7 +36,7 @@
                                 info@devstudio.com
                             </a>
                         </li>
-                        <li class="flex-secondary contacts-item">
+                        <li>
                            
                             <a class="contacts-tel" href="tel:+380961111111">
                                 <div>
@@ -121,10 +123,10 @@
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <section class="section what-do">
                 <div class="conteiner">
                     <h2 class="work title-h2">Чем мы занимаемся</h2>
-                    <ul class="flex">
+                    <ul class="work-list">
                         <li>
                             <div class="work-img">
                                 <img class="icon-work" src="./image/laptop-2.jpg" alt="Ноутбук" width="370">
@@ -151,12 +153,12 @@
             <section class="section-team">
                 <div class="conteiner">
                     <h2 class="title-h2">Наша команда</h2>
-                    <ul class="flex">
+                    <ul class="team-list">
                         <li class="team-item">
                             <img class="icon-team" src="./image/foto-1.jpg" alt="Фотография Николая Кучеренко" width="270">
                             <h3 class="team-member">Николай Кучеренко</h3>
                             <p class="team-job">Дизайнер продукта</p>
-                            <ul class="team-link flex-secondary">
+                            <ul class="team-link">
                                 <li>
                                     <a  href="" aria-label="Ссылка на Instagram" class="network-link">
                                         <svg class="network">
@@ -297,10 +299,10 @@
                     </ul>
                 </div>
             </section>
-            <section class="section i">
+            <section class="section-clients">
                 <div class="conteiner">
                     <h2 class="title-h2">Постоянные клиенты</h2>
-                    <ul  class="flex clients-list ">
+                    <ul  class="clients-list ">
                         <li class="clients">
                             <a  href="" class="logo-hover">
                                 <svg class="clients-logo-1 clients-logo">
@@ -407,48 +409,49 @@
 
         
         <footer class="section-footer">
-           
-            <div class="conteiner flex">
-                <div>
-                    <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
-                    <address>
-                        <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
-                        <ul>
-                            <li><a class="contacts mail" href="mailto:info@example.com">info@example.com</a></li>
-                            <li><a class="contacts tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
-                        </ul> 
-                    </address>
+            <div class="conteiner">
+                <div class="adress-and-join">
+                    <div class="adress-conteiner">
+                        <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
+                        <address>
+                            <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
+                            <ul>
+                                <li><a class="contacts mail" href="mailto:info@example.com">info@example.com</a></li>
+                                <li><a class="contacts tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                            </ul>
+                        </address>
+                    </div>
+                    
+                    <div class="join">
+                        <b class="join-title">Присоединяйтесь</b>
+                        <ul class="join-networks">
+                            <li class="join-li"><a class="join-link" href="" aria-label="Ссылка на Instagram">
+                                    <svg class='footer-network'>
+                                        <use href="./image/Network/sprait-network.svg#icon-instagram"></use>
+                    
+                                    </svg></a>
+                            </li>
+                            <li class="join-li"><a class="join-link" href="" aria-label="Ссылка на Twitter">
+                                    <svg class='footer-network'>
+                                        <use href="./image/Network/sprait-network.svg#icon-twitter"></use>
+                    
+                                    </svg></a>
+                            </li>
+                            <li class="join-li"><a class="join-link" href="" aria-label="Ссылка на Facebook">
+                                    <svg class='footer-network'>
+                                        <use href="./image/Network/sprait-network.svg#icon-facebook"></use>
+                                    </svg></a>
+                            </li>
+                            <li class="join-li"><a class="join-link" href="" aria-label="Ссылка на LinkedIn">
+                                    <svg class='footer-network'>
+                                        <use href="./image/Network/sprait-network.svg#icon-linkedin"></use>
+                    
+                                    </svg></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="join">
-                    <b class="join-title">Присоединяйтесь</b>
-                    <ul class="flex-secondary">
-                        <li class="join-li"><a class="join-link" href="" aria-label="Ссылка на Instagram">
-                            <svg class='footer-network'>
-                                <use href="./image/Network/sprait-network.svg#icon-instagram"></use>
-
-                            </svg></a>
-                        </li>
-                        <li class="join-li"><a class="join-link" href="" aria-label="Ссылка на Twitter">
-                            <svg class='footer-network'>
-                                <use href="./image/Network/sprait-network.svg#icon-twitter"></use>
-
-                            </svg></a>
-                        </li>
-                        <li class="join-li"><a class="join-link" href="" aria-label="Ссылка на Facebook">
-                            <svg class='footer-network'>
-                                <use href="./image/Network/sprait-network.svg#icon-facebook"></use>
-                            </svg></a>
-                        </li>
-                        <li class="join-li"><a class="join-link" href="" aria-label="Ссылка на LinkedIn">
-                            <svg class='footer-network'>
-                                <use href="./image/Network/sprait-network.svg#icon-linkedin"></use>
-
-                            </svg></a>
-                        </li>
-                    </ul>
-                </div>
-                <form class="subscribe flex-secondary">
+                <form class="subscribe">
                     <div>
                         <b class="subscribe-title">Подпишитесь на рассылку</b>
                         <input class="subscribe-input" type="mail" name="subscribe" placeholder="E-mail">
@@ -460,7 +463,6 @@
                         </svg></a>
                     </button>
                 </form>
-                        
             </div>
             <p class="caption">2020 | Developed by Tatiana Pomazunovskaya</p>
         </footer>

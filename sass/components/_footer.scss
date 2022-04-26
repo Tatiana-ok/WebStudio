@@ -1,9 +1,27 @@
 /* Подвал */
 
-footer {
+.section-footer {
     background-color: #2F303A;
+    
+    @media screen and (max-width: 1199px){
+        text-align: center;
+    }
 }
 
+.section-footer .conteiner{
+    padding-bottom: 50px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        padding-bottom: 60px;
+    }
+}
+
+.adress-and-join{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .logo-footer {
     display: inline-block;
@@ -12,7 +30,6 @@ footer {
     font-size: 26px;
     line-height: 1.2;
     font-family: "Raleway", sans-serif;
-    padding-top: 45px;
     margin-bottom: 8px;
 
     &:hover,
@@ -26,19 +43,38 @@ footer {
     letter-spacing: 0.03em;
 }
 
+.adress-conteiner{
+    padding-top: 60px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 165px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 80px;
+        margin-bottom: 0px;
+    }
+}
+
 .street {
     font-style: normal;
     color: #FFFFFF;
     font-size: 14px;
     line-height: 1.7;
     margin-top: 0;
-    margin-bottom: 9px;
-    margin-right: 80px;
+    
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+        // margin-right: 80px;
+    }
 }
 
-footer address {
-    padding-bottom: 28px;
-}
+// footer address {
+
+//     @media screen and (min-width: 1200px) {
+//         padding-bottom: 28px;
+//     }
+// }
 
 footer .contacts {
     font-weight: 400;
@@ -49,6 +85,10 @@ footer .contacts {
 .contacts.mail {
     display: inline-block;
     margin-bottom: 9px;
+}
+
+.join-networks{
+    @include flex ();
 }
 
 .join-title,
@@ -62,7 +102,6 @@ footer .contacts {
     line-height: 16px;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
-    
 }
 
 .join-li:hover {
@@ -95,28 +134,48 @@ footer .contacts {
     height: 20px;
 }
 
-
 .join {
-    padding-bottom: 56px;
-    margin-right: 94px;
+    display: inline-block;
+    width: 206px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px){
+        padding-top: 72px;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 94px;
+        margin-bottom: 0px;
+        padding-top: 72px;
+        text-align: start;
+    }
 }
 
 .subscribe {
-    padding-bottom: 50px;
-    align-items: flex-end;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: flex-end;
+    }
 }
 
 .subscribe-input {
     display: inline-block;
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 18px 12px;
     margin-right: 12px;
+    margin-bottom: 20px;
     color: rgba(255, 255, 255, 0.6);
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0px;
+    }
 }
 
 .subscribe-button {
@@ -141,7 +200,6 @@ footer .contacts {
         display: inline-block;
     }
 }
-
 
 .icon-join {
     display: block;

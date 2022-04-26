@@ -1,43 +1,92 @@
 /* Постоянные клиенты */
 
-.clients {
+.section-clients{
+    @include section ();
+    padding-top: 60px;
+}
+
+.clients-list{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
-    width: 170px;
-    height: 90px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
 }
 
 .clients-list li {
-    &:first-of-type a{
-        padding: 18px 62px; 
+    &:first-of-type a {
+        padding: 18px 62px;
     }
 
-    &:nth-of-type(2) a{
+    &:nth-of-type(2) a {
         padding: 16px 64px;
     }
 
-    &:nth-of-type(3) a{
+    &:nth-of-type(3) a {
         padding: 21px 64px;
     }
 
-    &:nth-of-type(4) a{
+    &:nth-of-type(4) a {
         padding: 21px 44px;
     }
 
-    &:nth-of-type(5) a{
+    &:nth-of-type(5) a {
         padding: 19px 55px;
     }
 
-    &:last-of-type a{
+    &:last-of-type a {
         padding: 20px 40px;
     }
 }
 
-.clients a:hover,
-.clients a:focus {
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 90px;
+    margin-bottom: 30px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    @media screen and (max-width: 767px) {
+        &:nth-child(2n + 1) {
+            margin-right: 30px;
+        };
+        
+        &:nth-child(n + 5) {
+            margin-bottom: 0px;
+        }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 226px;
+        margin-right: 30px;
+
+        &:nth-child(3) {
+            margin-right: 0px;
+        }
+
+        &:nth-child(6) {
+            margin-right: 0px;
+        }
+
+        &:nth-child(n + 4) {
+            margin-bottom: 0px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        margin-right: 30px;
+        margin-bottom: 0px;
+
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+}
+
+.clients:hover,
+.clients:focus {
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     cursor: pointer;
@@ -91,3 +140,4 @@
         fill: #2196f3;
     }
 }
+

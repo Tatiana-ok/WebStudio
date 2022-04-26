@@ -1,8 +1,13 @@
 /* Шапка страниц */
 
+.menu{
+    fill: black;
+}
+
 .header {
     border-bottom: 1px solid #EEEEEE;
 }
+
 
 nav > .logo {
     display: flex;

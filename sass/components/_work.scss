@@ -1,19 +1,18 @@
 /* Чем мы занимаемся */
 
+.what-do{
+    @media screen and (max-width: 1199px){
+        display: none;
+    }
+}
+
+.work-list{
+    @include flex ();
+}
 
 .icon-work {
     display: block;
     margin-top: 0;
-}
-
-.title-h2 {
-    font-weight: 700;
-    font-size: 36px;
-    color: var(--secondary-text-color);
-    line-height: 1.17;
-    margin-top: 0;
-    margin-bottom: 50px;
-    text-align: center;
 }
 
 .work-img {
