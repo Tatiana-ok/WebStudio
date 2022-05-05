@@ -318,7 +318,7 @@ header .contacts {
 @media screen and (min-width: 768px) {
   header .contacts {
     text-align: start;
-    margin-left: 57px;
+    margin-left: 55px;
     padding-bottom: 15px;
     padding-top: 15px;
   }
@@ -411,10 +411,27 @@ header .contacts {
   border: 1px solid #ECECEC;
 }
 
+hr {
+  width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  hr {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  hr {
+    width: 1600px;
+  }
+}
+
 /* Тело основной страницы */
 /* Герой */
 .hero {
   position: relative;
+  max-width: 480px;
   height: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -612,7 +629,7 @@ header .contacts {
   }
 }
 
-.icon-conteiner {
+.icon-container {
   width: 450px;
   height: 120px;
   margin-bottom: 30px;
@@ -621,20 +638,20 @@ header .contacts {
   background-color: var(--secondary-background-color);
 }
 
-.icon-conteiner::before {
+.icon-container::before {
   height: 120px;
   background-color: var(--secondary-text-color);
 }
 
 @media screen and (min-width: 768px) {
-  .icon-conteiner {
+  .icon-container {
     width: 354px;
     margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .icon-conteiner {
+  .icon-container {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
@@ -718,6 +735,12 @@ header .contacts {
 @media screen and (max-width: 1599px) {
   .what-do {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .what-do {
+    padding-top: 0;
   }
 }
 
@@ -811,7 +834,7 @@ header .contacts {
   }
 }
 
-.icon-team {
+.team-image {
   width: 450px;
   height: 320px;
   display: block;
@@ -819,14 +842,14 @@ header .contacts {
 }
 
 @media screen and (min-width: 768px) {
-  .icon-team {
+  .team-image {
     width: 354px;
     height: 260px;
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .icon-team {
+  .team-image {
     width: 270px;
   }
 }

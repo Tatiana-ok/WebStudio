@@ -62,12 +62,24 @@
             <section class="hero section">
                 <div class="background"></div>
                 <div class="slider">
-                    <img class="hero-img" src="./image/Header/1/HeaderDesktop.jpg" 
-                    srcset="./image/Header/1/HeaderMobile.jpg 480w, ./image/Header/1/HeaderTablet.jpg 768w, ./image/Header/1/HeaderDesktop.jpg 1600w" alt="Команда">
-                    <!-- <img class="hero-img" src="./image/Header/2/Header2-img.jpg" alt="Адаптивность"/>
-                    <img class="hero-img" src="./image/Header/3/Header3-img.jpg" alt="Карта"/> -->
-                    <!-- <img class="icon-team" src="./image/foto-1.jpg" srcset="./image/foto-1.jpg 270w, ./image/foto-1-1.jpg 450w"
-                        sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Николая Кучеренко"> -->
+                    <picture>
+                        <source srcset="./image/Header/1/HeaderMobile.jpg" media="(max-width: 767px)" />
+                        <source srcset="./image/Header/1/HeaderTablet.jpg" media="(min-width: 768px) and (max-width: 1599px)" />
+                        <source srcset="./image/Header/1/HeaderDesktop.jpg" media="(min-width: 1600px)" />
+                        <img class="hero-img" src="./image/Header/1/HeaderDesktop.jpg" alt="Команда" />
+                    </picture>
+                    <picture>
+                        <source srcset="./image/Header/2/HeaderMobile-2.jpg" media="(max-width: 767px)" />
+                        <source srcset="./image/Header/2/HeaderTablet-2.jpg" media="(min-width: 768px) and (max-width: 1599px)" />
+                        <source srcset="./image/Header/2/HeaderDesktop-2.jpg" media="(min-width: 1600px)" />
+                        <img class="hero-img" src="./image/Header/2/HeaderDesktop-2.jpg" alt="Адаптивность" />
+                    </picture>
+                    <picture>
+                        <source srcset="./image/Header/3/HeaderMobile-3.jpg" media="(max-width: 767px)" />
+                        <source srcset="./image/Header/3/HeaderTablet-3.jpg" media="(min-width: 768px) and (max-width: 1599px)" />
+                        <source srcset="./image/Header/3/HeaderDesktop-3.jpg" media="(min-width: 1600px)" />
+                        <img class="hero-img" src="./image/Header/3/HeaderDesktop-3.jpg" alt="Карта" />
+                    </picture>
                 </div>
                 <div style="text-align: center;">
                     <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -83,7 +95,7 @@
                     <span class="dot third"></span>
                 </div>
             </section>
-            <section class="section" style="padding-bottom: 0;">
+            <section class="section" >
                 <div class="container">
                     <ul class="advantages-list">
                         <li class="advantages">
@@ -165,7 +177,11 @@
                     <h2 class="title-h2">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-item">
-                            <img class="icon-team" src="./image/foto-1-1.jpg" srcset="./image/foto-1.jpg 270w, ./image/foto-1-1.jpg 450w" sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Николая Кучеренко">
+                            <picture >
+                                <source srcset="./image/photo-1-1.jpg" media="(max-width: 1599px)" />
+                                <source srcset="./image/photo-1.jpg" media="(min-width: 1600px)" />
+                                <img class="team-image" src="./image/photo-1.jpg"  alt="Николай Кучеренко"/>
+                            </picture>
                             <h3 class="team-member">Николай Кучеренко</h3>
                             <p class="team-job">Дизайнер продукта</p>
                             <ul class="team-link">
@@ -200,7 +216,11 @@
                             </ul>                      
                         </li>
                         <li class="team-item">
-                            <img class="icon-team" src="./image/foto-2-1.jpg" srcset="./image/foto-2.jpg 270w, ./image/foto-2-1.jpg 450w" sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Ольги Ивановы">
+                            <picture>
+                                <source srcset="./image/photo-2-1.jpg" media="(max-width: 1599px)" />
+                                <source srcset="./image/photo-2.jpg" media="(min-width: 1600px)" />
+                                <img class="team-image" src="./image/photo-2.jpg" alt="Фотография Ольги Ивановы">
+                            </picture>
                             <h3 class="team-member">Ольга Иванова</h3>
                             <p class="team-job">Фронтенд Разработчик</p>
                             <ul class="team-link flex-secondary">
@@ -236,7 +256,11 @@
                             
                         </li>
                         <li class="team-item">
-                            <img class="icon-team" src="./image/foto-3-1.jpg" srcset="./image/foto-3.jpg 270w, ./image/foto-3-1.jpg 450w" sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Андрея Шевченко">
+                            <picture>
+                                <source srcset="./image/photo-3-1.jpg" media="(max-width: 1599px)" />
+                                <source srcset="./image/photo-3.jpg" media="(min-width: 1600px)" />
+                                <img class="team-image" src="./image/photo-3.jpg" alt="Фотография Андрея Шевченко">
+                            </picture>
                             <h3 class="team-member">Андрей Шевченко</h3>
                             <p class="team-job">Маркетолог</p>
                             <ul class="team-link flex-secondary">
@@ -272,7 +296,11 @@
                             
                         </li>
                         <li class="team-item">
-                            <img class="icon-team" src="./image/foto-4-1.jpg" srcset="./image/foto-4.jpg 270w, ./image/foto-4-1.jpg 450w" sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Ивана Николаева" width="270">
+                            <picture>
+                                <source srcset="./image/photo-4-1.jpg" media="(max-width: 1599px)" />
+                                <source srcset="./image/photo-4.jpg" media="(min-width: 1600px)" />
+                                <img class="team-image" src="./image/photo-4.jpg" alt="Фотография Ивана Николаева">
+                            </picture>
                             <h3 class="team-member">Иван Николаев</h3>
                             <p class="team-job">UI дизайнер</p>
                             <ul class="team-link flex-secondary">

@@ -52,8 +52,14 @@ let clientWidth = document.documentElement.clientWidth;
 // Для кнопок
 
 document.querySelector('.next').addEventListener('click', function () {
-    offset = offset + 1600;
-    if(offset > 3200){
+    if (clientWidth > 1600) {
+    clientWidth = 1600;
+    };
+    if (clientWidth < 480) {
+        clientWidth = 480;
+    };
+    offset = offset + clientWidth;
+    if(offset > 2*clientWidth){
         offset = 0;
     }
     sliderLine.style.left = -offset + 'px';
@@ -61,9 +67,9 @@ document.querySelector('.next').addEventListener('click', function () {
 });
 
 document.querySelector('.prev').addEventListener('click', function(){
-    offset = offset - 1600;
+    offset = offset - clientWidth;
     if(offset < 0){
-        offset = 3200;
+        offset = 2*clientWidth;
     }
     sliderLine.style.left = -offset + 'px';
     clearInterval(intervalId);
