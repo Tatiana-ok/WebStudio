@@ -1,13 +1,7 @@
 /* Наша команда */
 
-.section-team {
-    @include section ();
-    padding-top: 60px;
+.section.team {
     background-color: var(--secondary-background-color);
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-    }
 }
 
 .team-list{
@@ -41,7 +35,7 @@
         }
     }
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1600px) {
         width: 270px;
         margin-right: 30px;
         margin-bottom: 0px;
@@ -53,8 +47,19 @@
 }
 
 .icon-team {
+    width: 450px;
+    height: 320px;
     display: block;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        width: 354px;
+        height: 260px;
+    }
+
+    @media screen and (min-width: 1600px) {
+        width: 270px;
+    }
 }
 
 .team-member {

@@ -11,47 +11,57 @@
     
 </head>
 <body>
-    <header class="header">
-        <div class="conteiner flex">
-            <nav class="nav flex">
-                <a class="logo" href="./index.html"><span>Web</span> Studio</a>
-                <ul class="nav-title">
-                    <li><a class="link" href="./index.html">Студия</a></li>
-                    <li><a class="current link" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="link" href="./contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-            
-            <address class="contacts">
-                <ul>
-                    <li class="flex-secondary contacts-item">
-                       
-                        <a class="contacts-mail" href="mailto:info@devstudio.com">
-                            <div>
-                                <svg class="contacts-svg" >
-                                    <use href="./image/symbol-defs.svg#icon-E-mail"></use>
-                                </svg>
-                            </div>
-                            info@devstudio.com</a>
-                    </li>
-                    <li class="flex-secondary contacts-item">
-                        <a class="contacts-tel" href="tel:+380961111111">
-                            <div>
-                                <svg class="contacts-svg" >
-                                    <use href="./image/symbol-defs.svg#icon-Tel"></use>
-                                </svg>
-                            </div>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>                              
-            </address>
+    <header>
+        <div class="container nav-container">
+            <a class="logo-header" href="./index.html"><span>Web</span> Studio</a>
+            <button type="button" class="menu-button">
+                <svg>
+                    <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu"></use>
+                    <use class="icon-close" href="./image/Modal/symbol-defs2.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="nav-menu">
+                <div class="menu-container">
+                    <nav class="nav">
+                        <ul class="nav-title">
+                            <li><a class="link" href="./index.html">Студия</a></li>
+                            <li><a class="current link" href="./portfolio.html">Портфолио</a></li>
+                            <li><a class="link" href="./contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <address class="contacts">
+                        <ul>
+                            <li>
+                                <a class="contacts-mail" href="mailto:info@devstudio.com">
+                                    <div>
+                                        <svg class="contacts-svg">
+                                            <use href="./image/symbol-defs.svg#icon-E-mail"></use>
+                                        </svg>
+                                    </div>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li>
+    
+                                <a class="contacts-tel" href="tel:+380961111111">
+                                    <div>
+                                        <svg class="contacts-svg">
+                                            <use href="./image/symbol-defs.svg#icon-Tel"></use>
+                                        </svg>
+                                    </div>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
         </div>
-                   
+        <hr class="line"></hr>
     </header>
     <main>
-        <section class="projects">
-            <div class="conteiner">
+        <section class="section projects">
+            <div class="container">
                 <h1 style="text-align: center;">Наши работы</h1>
                 <ul class="filter">
                     <li class="fil-item"><button data-value="all" type="button" class="fil-button">Все</button></li>
@@ -117,9 +127,7 @@
                                 <h2 class="list-artical">Проект Prime</h2>
                                 <p class="description">Маркетинг</p>
                             </div>
-                            
                         </a>
-                        
                     </li>
                     <li class="item application">
                         <a href="" class="list-link">
@@ -135,7 +143,6 @@
                             </div>
                             
                         </a>
-                        
                     </li>
                     <li class="item website">
                         <a href="" class="list-link">
@@ -149,9 +156,7 @@
                                 <h2 class="list-artical">Inspiration has no Borders</h2>
                                 <p class="description">Веб-сайт</p>
                             </div>
-                            
                         </a>
-                        
                     </li>
                     <li class="item design">
                         <a href="" class="list-link">
@@ -163,9 +168,7 @@
                                 <h2 class="list-artical">Издание Limited Edition</h2>
                                 <p class="description">Дизайн</p>
                             </div>
-                            
                         </a>
-                        
                     </li>
                     <li class="item marketing">
                         <a href="" class="list-link">
@@ -177,9 +180,7 @@
                                 <h2 class="list-artical">Проект LAB</h2>
                                 <p class="description">Маркетинг</p>
                             </div>
-                            
                         </a>
-                        
                     </li>
                     <li class="item application">
                         <a href="" class="list-link">
@@ -198,10 +199,10 @@
         </section>
     </main>
     <footer class="section-footer">
-        <div class="conteiner">
+        <div class="container">
             <div class="adress-and-join">
-                <div class="adress-conteiner">
-                    <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
+                <div class="adress-container">
+                    <a class="logo-footer" href="./index.html"><span>Web</span> Studio</a>
                     <address>
                         <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
                         <ul>
@@ -255,6 +256,7 @@
         </div>
         <p class="caption">2020 | Developed by Tatiana Pomazunovskaya</p>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="/js/portfolioFilter.js"></script>
 </body>
 </html>

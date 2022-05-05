@@ -10,3 +10,4 @@ let f = document.querySelector('.filter').addEventListener('click', (event) => {
         }
     });
 });
+

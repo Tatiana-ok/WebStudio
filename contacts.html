@@ -11,51 +11,60 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="header">
-        <div class="conteiner flex">
-            <nav class="nav flex">
-                <a class="logo" href="./index.html"><span>Web</span> Studio</a>
-                <ul class="nav-title">
-                    <li><a class="link" href="./index.html">Студия</a></li>
-                    <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-                    <li><a class="current link" href="./contacts.html">Контакты</a></li>
-                </ul>
-            </nav>
-            
-            <address class="contacts">
-                <ul>
-                    <li class="flex-secondary contacts-item">
-                        
-                        <a class="contacts-mail" href="mailto:info@devstudio.com">
-                            <div>
-                                <svg class="contacts-svg" >
-                                    <use href="./image/symbol-defs.svg#icon-E-mail"></use>
-                                </svg>
-                            </div>
-                            info@devstudio.com
-                        </a>
-                    </li>
-                    <li class="flex-secondary contacts-item">
-                       
-                        <a class="contacts-tel" href="tel:+380961111111">
-                            <div>
-                                <svg class="contacts-svg" >
-                                    <use href="./image/symbol-defs.svg#icon-Tel"></use>
-                                </svg>
-                            </div>
-                            +38 096 111 11 11
-                        </a>
-                    </li>
-                </ul>                              
-            </address>
+    <header>
+        <div class="container nav-container">
+            <a class="logo-header" href="./index.html"><span>Web</span> Studio</a>
+            <button type="button" class="menu-button">
+                <svg>
+                    <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu"></use>
+                    <use class="icon-close" href="./image/Modal/symbol-defs2.svg#icon-close"></use>
+                </svg>
+            </button>
+            <div class="nav-menu">
+                <div class="menu-container">
+                    <nav class="nav">
+                        <ul class="nav-title">
+                            <li><a class="link" href="./index.html">Студия</a></li>
+                            <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+                            <li><a class="current link" href="./contacts.html">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <address class="contacts">
+                        <ul>
+                            <li>
+                                <a class="contacts-mail" href="mailto:info@devstudio.com">
+                                    <div>
+                                        <svg class="contacts-svg">
+                                            <use href="./image/symbol-defs.svg#icon-E-mail"></use>
+                                        </svg>
+                                    </div>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li>
+    
+                                <a class="contacts-tel" href="tel:+380961111111">
+                                    <div>
+                                        <svg class="contacts-svg">
+                                            <use href="./image/symbol-defs.svg#icon-Tel"></use>
+                                        </svg>
+                                    </div>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
         </div>
+        <hr class="line"></hr>
     </header>
     <main>
         <section class="section">
-            <div class="conteiner">
+            <div class="container">
                 <h1 style="text-align: center;">Контакты</h1>
                 <div class="list-of-contacts">
-                    <div id="map"></div>
+                    <!-- <div id="map"></div> -->
                     <img class="map" src="./image/Contacts/map.PNG"/>
                     <div>
                         <p class="contact-text">График роботы: ПН-ПТ: 09:00 - 18:00</p>
@@ -102,10 +111,10 @@
         </section>
     </main>
     <footer class="section-footer">
-        <div class="conteiner">
+        <div class="container">
             <div class="adress-and-join">
-                <div class="adress-conteiner">
-                    <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
+                <div class="adress-container">
+                    <a class="logo-footer" href="./index.html"><span>Web</span> Studio</a>
                     <address>
                         <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
                         <ul>
@@ -164,5 +173,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD14TPss0-V2Y4EmZEpCNy2ujGB_ktFLkk&callback=initMap&v=weekly"
       async
     ></script> -->
+    <!-- <script src="./js/index.js"></script> -->
+    <script src="./js/menu.js"></script>
 </body>
 </html>

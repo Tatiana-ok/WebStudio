@@ -2,7 +2,7 @@
 /* Тело страницы портфолио */
 
 .projects {
-    @include section ();
+    padding-top: 0;
 }
 
 .filter {
@@ -99,7 +99,7 @@
         background-size: 354px 294px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1600px) {
         width: 370px;
         background-size: 370px 294px;
     }
@@ -144,7 +144,7 @@
         margin-right: 10px;
     }
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1600px) {
         width: 370px;
         margin-right: 20px;
 

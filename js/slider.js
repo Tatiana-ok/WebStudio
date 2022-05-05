@@ -5,16 +5,48 @@ const sliderLine = document.querySelector('.slider');
 const firstDot = document.querySelector('.first');
 const secondDot = document.querySelector('.second');
 const thirdDot = document.querySelector('.third');
+const initialClientWidth = document.documentElement.clientWidth;
+let clientWidth = document.documentElement.clientWidth;
 
 // Прокрутка
 
-let intervalId = setInterval(function () {
-    offset = offset + 1600;
-    if(offset > 3200){
-        offset = 0;
-    }
-    sliderLine.style.left = -offset + 'px';
-}, 2500);
+// Для  экрана шириной 480px
+
+// function Reload() {
+//     if (clientWidth != initialClientWidth) {
+//         document.location.reload();
+//     }
+// };
+
+// Reload();
+
+// if (clientWidth != initialClientWidth) {
+//     clearInterval(intervalId);
+// }
+
+// let intervalId = setInterval(function () {
+//     if (clientWidth > 1600) {
+//     clientWidth = 1600;
+//     };
+//     if (clientWidth < 480) {
+//         clientWidth = 480;
+//     };
+//     offset = offset + clientWidth;
+//     if(offset > 2*clientWidth){
+//         offset = 0;
+//     }
+//     sliderLine.style.left = -offset + 'px';
+// }, 2500);
+
+// Для  экрана шириной 1600px
+
+// let intervalId = setInterval(function () {
+//     offset = offset + 1600;
+//     if(offset > 3200){
+//         offset = 0;
+//     }
+//     sliderLine.style.left = -offset + 'px';
+// }, 2500);
 
 
 // Для кнопок

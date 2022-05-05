@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Webstudio</title>
+        <title>Web Studio</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
@@ -11,53 +11,63 @@
     </head>
     <body>
         <header>
-            <div class="conteiner">
-                <nav class="nav">
-                    <a class="logo" href="./index.html"><span>Web</span> Studio</a>
-                    <ul class="nav-title">
-                        <li><a class="current link" href="./index.html">Студия</a></li>
-                        <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-                        <li><a class="link" href="./contacts.html">Контакты</a></li>
-                    </ul>
-                </nav>
-                <svg class="menu">
-                    <use href="./image/symbol-defs.svg#icon-menu"></use>
-                </svg>
-                <address class="contacts">
-                    <ul>
-                        <li>
-                            
-                            <a class="contacts-mail" href="mailto:info@devstudio.com">
-                                <div>
-                                    <svg class="contacts-svg" >
-                                        <use href="./image/symbol-defs.svg#icon-E-mail"></use>
-                                    </svg>
-                                </div>
-                                info@devstudio.com
-                            </a>
-                        </li>
-                        <li>
-                           
-                            <a class="contacts-tel" href="tel:+380961111111">
-                                <div>
-                                    <svg class="contacts-svg" >
-                                        <use href="./image/symbol-defs.svg#icon-Tel"></use>
-                                    </svg>
-                                </div>
-                                +38 096 111 11 11
-                            </a>
-                        </li>
-                    </ul>                              
-                </address>
+            <div class="container nav-container" >
+                <a class="logo-header" href="./index.html"><span>Web</span> Studio</a>
+                <button type="button" class="menu-button">
+                    <svg>
+                        <use class="icon-menu" href="./image/symbol-defs.svg#icon-menu"></use>
+                        <use class="icon-close" href="./image/Modal/symbol-defs2.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <div class="nav-menu">
+                    <div class="menu-container">
+                        <nav class="nav">
+                            <ul class="nav-title">
+                                <li><a class="current link" href="./index.html">Студия</a></li>
+                                <li><a class="link" href="./portfolio.html">Портфолио</a></li>
+                                <li><a class="link" href="./contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <address class="contacts">
+                            <ul>
+                                <li>
+                                    <a class="contacts-mail" href="mailto:info@devstudio.com">
+                                        <div>
+                                            <svg class="contacts-svg">
+                                                <use href="./image/symbol-defs.svg#icon-E-mail"></use>
+                                            </svg>
+                                        </div>
+                                        info@devstudio.com
+                                    </a>
+                                </li>
+                                <li>
+                        
+                                    <a class="contacts-tel" href="tel:+380961111111">
+                                        <div>
+                                            <svg class="contacts-svg">
+                                                <use href="./image/symbol-defs.svg#icon-Tel"></use>
+                                            </svg>
+                                        </div>
+                                        +38 096 111 11 11
+                                    </a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </div>
             </div>
+            <hr class="line"></hr>
         </header>
         <main>
-            <!-- <section class="hero section">
+            <section class="hero section">
                 <div class="background"></div>
                 <div class="slider">
-                    <img class="hero-img" src="./image/Header/1/HeaderDesktop.jpg" alt="Команда">
-                    <img class="hero-img" src="./image/Header/2/Header2-img.jpg" alt="Адаптивность"/>
-                    <img class="hero-img" src="./image/Header/3/Header3-img.jpg" alt="Карта"/>
+                    <img class="hero-img" src="./image/Header/1/HeaderDesktop.jpg" 
+                    srcset="./image/Header/1/HeaderMobile.jpg 480w, ./image/Header/1/HeaderTablet.jpg 768w, ./image/Header/1/HeaderDesktop.jpg 1600w" alt="Команда">
+                    <!-- <img class="hero-img" src="./image/Header/2/Header2-img.jpg" alt="Адаптивность"/>
+                    <img class="hero-img" src="./image/Header/3/Header3-img.jpg" alt="Карта"/> -->
+                    <!-- <img class="icon-team" src="./image/foto-1.jpg" srcset="./image/foto-1.jpg 270w, ./image/foto-1-1.jpg 450w"
+                        sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Николая Кучеренко"> -->
                 </div>
                 <div style="text-align: center;">
                     <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
@@ -72,12 +82,12 @@
                     <span class="dot second"></span>
                     <span class="dot third"></span>
                 </div>
-            </section> -->
-            <section class="section">
-                <div class="conteiner">
+            </section>
+            <section class="section" style="padding-bottom: 0;">
+                <div class="container">
                     <ul class="advantages-list">
                         <li class="advantages">
-                            <div class="icon-conteiner">
+                            <div class="icon-container">
                                 <svg class="icon">
                                     <use href="./image/symbol-defs.svg#icon-antenna-1"></use>
                                 </svg>
@@ -88,7 +98,7 @@
                             </p>
                         </li>
                         <li class="advantages">
-                            <div class="icon-conteiner">
+                            <div class="icon-container">
                                 <svg class="icon">
                                     <use href="./image/symbol-defs.svg#icon-clock-1"></use>
                                 </svg>
@@ -99,7 +109,7 @@
                             </p>
                         </li>
                         <li class="advantages">
-                            <div class="icon-conteiner">
+                            <div class="icon-container">
                                 <svg class="icon">
                                     <use href="./image/symbol-defs.svg#icon-komp-1"></use>
                                 </svg>
@@ -110,7 +120,7 @@
                             </p>
                         </li>
                         <li class="advantages">
-                            <div class="icon-conteiner">
+                            <div class="icon-container">
                                 <svg class="icon">
                                     <use href="./image/symbol-defs.svg#icon-astronaut-1"></use>
                                 </svg>
@@ -124,7 +134,7 @@
                 </div>
             </section>
             <section class="section what-do">
-                <div class="conteiner">
+                <div class="container">
                     <h2 class="work title-h2">Чем мы занимаемся</h2>
                     <ul class="work-list">
                         <li>
@@ -150,12 +160,12 @@
                     </ul>
                 </div>
             </section>
-            <section class="section-team">
-                <div class="conteiner">
+            <section class="section team">
+                <div class="container">
                     <h2 class="title-h2">Наша команда</h2>
                     <ul class="team-list">
                         <li class="team-item">
-                            <img class="icon-team" src="./image/foto-1.jpg" alt="Фотография Николая Кучеренко" width="270">
+                            <img class="icon-team" src="./image/foto-1-1.jpg" srcset="./image/foto-1.jpg 270w, ./image/foto-1-1.jpg 450w" sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Николая Кучеренко">
                             <h3 class="team-member">Николай Кучеренко</h3>
                             <p class="team-job">Дизайнер продукта</p>
                             <ul class="team-link">
@@ -190,7 +200,7 @@
                             </ul>                      
                         </li>
                         <li class="team-item">
-                            <img class="icon-team" src="./image/foto-2.jpg" alt="Фотография Ольги Ивановы" width="270">
+                            <img class="icon-team" src="./image/foto-2-1.jpg" srcset="./image/foto-2.jpg 270w, ./image/foto-2-1.jpg 450w" sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Ольги Ивановы">
                             <h3 class="team-member">Ольга Иванова</h3>
                             <p class="team-job">Фронтенд Разработчик</p>
                             <ul class="team-link flex-secondary">
@@ -226,7 +236,7 @@
                             
                         </li>
                         <li class="team-item">
-                            <img class="icon-team" src="./image/foto-3.jpg" alt="Фотография Андрея Шевченко" width="270">
+                            <img class="icon-team" src="./image/foto-3-1.jpg" srcset="./image/foto-3.jpg 270w, ./image/foto-3-1.jpg 450w" sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Андрея Шевченко">
                             <h3 class="team-member">Андрей Шевченко</h3>
                             <p class="team-job">Маркетолог</p>
                             <ul class="team-link flex-secondary">
@@ -262,7 +272,7 @@
                             
                         </li>
                         <li class="team-item">
-                            <img class="icon-team" src="./image/foto-4.jpg" alt="Фотография Ивана Николаева" width="270">
+                            <img class="icon-team" src="./image/foto-4-1.jpg" srcset="./image/foto-4.jpg 270w, ./image/foto-4-1.jpg 450w" sizes="(min-width: 1200px) 22,5vw, (min-width: 768px) 50vw, 100vw" alt="Фотография Ивана Николаева" width="270">
                             <h3 class="team-member">Иван Николаев</h3>
                             <p class="team-job">UI дизайнер</p>
                             <ul class="team-link flex-secondary">
@@ -299,8 +309,8 @@
                     </ul>
                 </div>
             </section>
-            <section class="section-clients">
-                <div class="conteiner">
+            <section class="section">
+                <div class="container">
                     <h2 class="title-h2">Постоянные клиенты</h2>
                     <ul  class="clients-list ">
                         <li class="clients">
@@ -406,13 +416,12 @@
                 </div>
             </div>
         </main>
-
         
         <footer class="section-footer">
-            <div class="conteiner">
+            <div class="container">
                 <div class="adress-and-join">
-                    <div class="adress-conteiner">
-                        <a class="logo-footer" href="./index.html"><span>Web</span>Studio</a>
+                    <div class="adress-container">
+                        <a class="logo-footer" href="./index.html"><span>Web</span> Studio</a>
                         <address>
                             <p class="street">г. Киев, пр-т Леси Украинки, 26</p>
                             <ul>
@@ -467,6 +476,7 @@
             <p class="caption">2020 | Developed by Tatiana Pomazunovskaya</p>
         </footer>
 
+        <script src="./js/menu.js"></script>
         <script src="./js/modal.js"></script>
         <script src="./js/slider.js"></script>
     </body>
