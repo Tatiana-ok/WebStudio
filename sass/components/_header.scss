@@ -15,6 +15,7 @@
 .nav-container {
   @include flex();
   align-items: baseline;
+  z-index: 6;
   @media screen and (min-width: 768px) {
     justify-content: flex-start;
   }
@@ -249,20 +250,4 @@ header .contacts {
 .menu-button > svg {
   width: 24px;
   height: 16px;
-}
-
-.line{
-  display: block;
-  margin: 0;
-  border: 1px solid #ECECEC;
-}
-
-hr{
-  width: 480px;
-  @media screen and (min-width:768px) {
-    width: 768px;
-  }
-  @media screen and (min-width:1600px) {
-    width: 1600px;
-  }
 }

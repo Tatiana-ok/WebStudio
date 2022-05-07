@@ -135,6 +135,7 @@ ul {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  z-index: 6;
 }
 
 @media screen and (min-width: 768px) {
@@ -403,28 +404,6 @@ header .contacts {
 .menu-button > svg {
   width: 24px;
   height: 16px;
-}
-
-.line {
-  display: block;
-  margin: 0;
-  border: 1px solid #ECECEC;
-}
-
-hr {
-  width: 480px;
-}
-
-@media screen and (min-width: 768px) {
-  hr {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  hr {
-    width: 1600px;
-  }
 }
 
 /* Тело основной страницы */
@@ -1349,7 +1328,6 @@ footer > .container {
   margin-right: 0;
   margin-left: 0;
   padding: 40px;
-  z-index: 5;
 }
 
 .form-field {
@@ -1619,6 +1597,7 @@ footer > .container {
           transform: translate(-50%, -50%);
   width: 530px;
   height: 582px;
+  z-index: 10;
   background-color: #ffffff;
   border-radius: 4px;
   /*outline: 1px solid black;*/
