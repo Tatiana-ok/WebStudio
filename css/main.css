@@ -439,7 +439,7 @@ header .contacts {
   content: '';
   width: 100%;
   height: 100%;
-  z-index: 2;
+  z-index: 1;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8)));
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
   background-repeat: no-repeat;
@@ -447,7 +447,7 @@ header .contacts {
 
 .hero-title {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   top: 118px;
   left: calc(50% - 178px);
   font-weight: 900;
@@ -1330,6 +1330,51 @@ footer > .container {
   padding: 40px;
 }
 
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .backdrop {
+    padding: 90px 15px;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (min-width: 1600px) {
+  .modal {
+    width: 530px;
+    height: 582px;
+  }
+}
+
 .form-field {
   margin-bottom: 28px;
   position: relative;
@@ -1354,9 +1399,15 @@ footer > .container {
 .form-input {
   width: 100%;
   height: 40px;
-  padding-left: 42px;
+  padding-left: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 1600px) {
+  .form-input {
+    padding-left: 42px;
+  }
 }
 
 .svg-name {
@@ -1395,8 +1446,8 @@ footer > .container {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.01em;
 }
 
@@ -1405,6 +1456,13 @@ footer > .container {
   -webkit-transform: translate(-24px, -38px);
           transform: translate(-24px, -38px);
   color: #2196F3;
+}
+
+@media screen and (min-width: 1600px) {
+  .form-label {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .form-input {
@@ -1449,8 +1507,8 @@ footer > .container {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   letter-spacing: 0.01em;
 }
 
@@ -1459,6 +1517,13 @@ footer > .container {
   -webkit-transform: translateY(-36px);
           transform: translateY(-36px);
   color: #2196F3;
+}
+
+@media screen and (min-width: 1600px) {
+  .form-comment {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .policy {
@@ -1479,30 +1544,53 @@ footer > .container {
 }
 
 .policy-label {
-  padding-left: 35px;
+  padding-left: 20px;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   cursor: pointer;
 }
 
 .policy-label :focus {
-  width: 301px;
+  width: 370px;
   height: 20px;
   outline: 2px solid #2196F3;
+}
+
+@media screen and (min-width: 1600px) {
+  .policy-label :focus {
+    width: 301px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .policy-label {
+    padding-left: 35px;
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox-svg {
   position: absolute;
   top: 4px;
-  left: 10px;
+  left: 2px;
   width: 16px;
   height: 15px;
   fill: #ffffff;
   border: 2px solid #212121;
   border-radius: 2px;
+}
+
+@media screen and (min-width: 1600px) {
+  .checkbox-svg {
+    top: 4px;
+    left: 10px;
+    width: 16px;
+    height: 15px;
+  }
 }
 
 .checkbox:checked + .checkbox-svg {
@@ -1514,12 +1602,19 @@ footer > .container {
 .policy a {
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 14px;
   letter-spacing: 0.03em;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196F3;
+}
+
+@media screen and (min-width: 1600px) {
+  .policy a {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 
 .modal-send {
@@ -1527,6 +1622,9 @@ footer > .container {
   margin-left: 120px;
   font-style: normal;
   font-weight: bold;
+  padding-left: 35px;
+  font-weight: bold;
+  padding-left: 35px;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
@@ -1570,40 +1668,6 @@ footer > .container {
 .link-close:hover .close,
 .link-close:focus .close {
   fill: var(--accent-color);
-}
-
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 530px;
-  height: 582px;
-  z-index: 10;
-  background-color: #ffffff;
-  border-radius: 4px;
-  /*outline: 1px solid black;*/
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 /* Тело страницы портфолио */
