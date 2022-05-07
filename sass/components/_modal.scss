@@ -24,6 +24,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-y: scroll;
 
     @media screen and (max-width: 767px) {
         padding: 90px 15px;
@@ -31,21 +32,32 @@
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    z-index: 3;
     width: 450px;
     height: 609px;
+    margin-right: auto;
+    margin-left: auto;
 
     background-color: #ffffff;
     border-radius: 4px;
     box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    
+    @media screen and (min-width: 768px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
     @media screen and (min-width: 1600px) {
         width: 530px;
         height: 582px;
     }
+}
+
+body.modal-open {
+    overflow: hidden;
 }
 
 .form-field {
@@ -191,9 +203,6 @@
 }
 
 .policy {
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     position: relative;
     margin-bottom: 30px;
 }
@@ -260,25 +269,26 @@
 .policy a {
     font-style: normal;
     font-weight: normal;
-    font-size: 12px;
+    font-size: 1px;
     line-height: 14px;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196F3;
 
     @media screen and (min-width: 1600px) {
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 14px;
+        line-height: 24px;
     }
 }
 
 
 .modal-send {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px 55px;
-    margin-left: 120px;
     font-style: normal;
-    font-weight: bold;padding-left: 35px;font-weight: bold;
-    padding-left: 35px;
+    font-weight: bold;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
@@ -289,6 +299,10 @@
     border: 1px solid #2196F3;
 
     cursor: pointer;
+
+    @media screen and (min-width:1600px) {
+        margin-left: 120px;
+    }
 }
 
 .link-close {
