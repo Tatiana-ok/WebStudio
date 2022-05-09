@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
         <link rel="stylesheet" href="./css/main.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     </head>
     <body>
         <header>
@@ -60,38 +61,44 @@
         <main>
             <section class="hero section">
                 <div class="background"></div>
-                <div class="slider">
-                    <picture>
-                        <source srcset="./image/Header/1/HeaderMobile.jpg" media="(max-width: 767px)" />
-                        <source srcset="./image/Header/1/HeaderTablet.jpg" media="(min-width: 768px) and (max-width: 1599px)" />
-                        <source srcset="./image/Header/1/HeaderDesktop.jpg" media="(min-width: 1600px)" />
-                        <img class="hero-img" src="./image/Header/1/HeaderDesktop.jpg" alt="Команда" />
-                    </picture>
-                    <picture>
-                        <source srcset="./image/Header/2/HeaderMobile-2.jpg" media="(max-width: 767px)" />
-                        <source srcset="./image/Header/2/HeaderTablet-2.jpg" media="(min-width: 768px) and (max-width: 1599px)" />
-                        <source srcset="./image/Header/2/HeaderDesktop-2.jpg" media="(min-width: 1600px)" />
-                        <img class="hero-img" src="./image/Header/2/HeaderDesktop-2.jpg" alt="Адаптивность" />
-                    </picture>
-                    <picture>
-                        <source srcset="./image/Header/3/HeaderMobile-3.jpg" media="(max-width: 767px)" />
-                        <source srcset="./image/Header/3/HeaderTablet-3.jpg" media="(min-width: 768px) and (max-width: 1599px)" />
-                        <source srcset="./image/Header/3/HeaderDesktop-3.jpg" media="(min-width: 1600px)" />
-                        <img class="hero-img" src="./image/Header/3/HeaderDesktop-3.jpg" alt="Карта" />
-                    </picture>
-                </div>
-                <div style="text-align: center;">
-                    <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                    <button data-modal-open class="hero-link">
-                        Заказать услугу
-                    </button>
-                </div>
-                <button type="button" class="prev">&#10094</button>
-                <button type="button" class="next">&#10095</button>
-                <div class="dots">
-                    <span class="dot first"></span>
-                    <span class="dot second"></span>
-                    <span class="dot third"></span>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./image/Header/1/HeaderMobile.jpg" media="(max-width: 767px)" />
+                                <source srcset="./image/Header/1/HeaderTablet.jpg" media="(min-width: 768px) and (max-width: 1599px)" />
+                                <source srcset="./image/Header/1/HeaderDesktop.jpg" media="(min-width: 1600px)" />
+                                <img class="hero-img" src="./image/Header/1/HeaderDesktop.jpg" alt="Команда" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./image/Header/2/HeaderMobile-2.jpg" media="(max-width: 767px)" />
+                                <source srcset="./image/Header/2/HeaderTablet-2.jpg"
+                                    media="(min-width: 768px) and (max-width: 1599px)" />
+                                <source srcset="./image/Header/2/HeaderDesktop-2.jpg" media="(min-width: 1600px)" />
+                                <img class="hero-img" src="./image/Header/2/HeaderDesktop-2.jpg" alt="Адаптивность" />
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source srcset="./image/Header/3/HeaderMobile-3.jpg" media="(max-width: 767px)" />
+                                <source srcset="./image/Header/3/HeaderTablet-3.jpg"
+                                    media="(min-width: 768px) and (max-width: 1599px)" />
+                                <source srcset="./image/Header/3/HeaderDesktop-3.jpg" media="(min-width: 1600px)" />
+                                <img class="hero-img" src="./image/Header/3/HeaderDesktop-3.jpg" alt="Карта" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                    <div style="text-align: center;">
+                        <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br>ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+                        <button data-modal-open class="hero-link">
+                            Заказать услугу
+                        </button>
+                    </div>
                 </div>
             </section>
             <section class="section" >
@@ -505,7 +512,9 @@
 
         <script src="./js/menu.js"></script>
         <script src="./js/modal.js"></script>
-        <script src="./js/slider.js"></script>
+        <!-- <script src="./js/slider.js"></script> -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="./js/slider-swiper.js"></script>
     </body>
 </html>
 

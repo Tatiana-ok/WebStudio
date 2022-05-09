@@ -410,6 +410,29 @@ header .contacts {
   height: 16px;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 80px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  padding: 30px 20px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  background-color: transparent;
+  border: none;
+}
+
+.swiper-button-prev:hover, .swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 /* Тело основной страницы */
 /* Герой */
 .hero {
@@ -438,25 +461,17 @@ header .contacts {
   padding-top: 0;
 }
 
-.background::before {
-  position: absolute;
-  content: '';
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8)));
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
-  background-repeat: no-repeat;
-}
-
 .hero-title {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 118px;
   left: calc(50% - 178px);
   font-weight: 900;
   font-size: 26px;
-  color: #FFFFFF;
+  color: var(--accent-color);
+  background-color: #FFFFFF;
+  padding-left: 10px;
+  padding-right: 10px;
   letter-spacing: 0.06em;
   line-height: 1.36;
   margin: 0;
@@ -489,85 +504,33 @@ header .contacts {
   cursor: pointer;
 }
 
-.slider {
-  -webkit-transition: all ease 1.5s;
-  transition: all ease 1.5s;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.swiper {
+  z-index: 1;
 }
 
-.hero-img {
-  width: 480px;
-  height: 400px;
-  left: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .hero-img {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1600px) {
-  .hero-img {
-    width: 1600px;
-    height: 600px;
-  }
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
+.swiper-button-prev::after,
+.swiper-button-next::after {
   z-index: 3;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
+  color: var(--accent-color);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 80px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  z-index: 3;
+  padding: 30px 20px;
   -webkit-transition: 0.6s ease;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px;
   background-color: transparent;
   border: none;
 }
 
-.prev:hover, .prev:focus, .next:hover, .next:focus {
+.swiper-button-prev:hover, .swiper-button-prev:focus,
+.swiper-button-next:hover,
+.swiper-button-next:focus {
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-.next {
-  right: 10px;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev {
-  left: 10px;
-}
-
-.dots {
-  position: absolute;
-  z-index: 3;
-  top: 95%;
-  left: calc(50% - 24px);
-}
-
-.dot {
-  display: inline-block;
-  height: 13px;
-  width: 13px;
-  background-color: #bbb;
-  border-radius: 50%;
-  cursor: pointer;
-  -webkit-transition: baground-color 0.6s ease;
-  transition: baground-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: var(--accent-color);
 }
 
 /* Преимущества */
