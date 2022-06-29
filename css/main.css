@@ -1803,6 +1803,7 @@ body.modal-open {
 }
 
 .list .item {
+  width: 450px;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -1856,6 +1857,12 @@ body.modal-open {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: pre;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1599px) {
+  .list-artical {
+    width: 300px;
+  }
 }
 
 .description {

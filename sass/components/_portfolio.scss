@@ -114,7 +114,6 @@
 }
 
 .card-content {
-    // width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -129,7 +128,7 @@
 }
 
 .list .item {
-    // width: 450px;
+    width: 450px;
     min-height: fit-content;
     margin-bottom: 20px;
     float: left;
@@ -181,6 +180,10 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre;
+
+    @media screen and (min-width: 768px) and (max-width: 1599px) {
+        width: 300px;
+    }
 }
 
 .description {
