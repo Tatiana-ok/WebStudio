@@ -1756,8 +1756,8 @@ body.modal-open {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.list-link:hover .text-img,
-.list-link:focus .text-img {
+.list-overlay:hover .text-img,
+.list-overlay:focus .text-img {
   overflow: hidden;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1777,11 +1777,11 @@ body.modal-open {
   }
 }
 
-.list-link {
+.list-overlay {
   display: inline-block;
 }
 
-.list-link:hover, .list-link:focus {
+.list-overlay:hover, .list-overlay:focus {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
           box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
