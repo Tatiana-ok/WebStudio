@@ -39,7 +39,9 @@
 }
 
 .icon-container {
-    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 120px;
     margin-bottom: 30px;
     margin-right: auto;
@@ -66,23 +68,8 @@
 .icon {
     width: 70px;
     height: 70px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 190px;
-    margin-right: 190px;
-
-    @media screen and (min-width: 768px){
-        margin-left: 142px;
-        margin-right: 142px;
-    }
-
-    @media screen and (min-width: 1600px){
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 }
 .advantages-title {
-    width: 450px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -105,7 +92,6 @@
 }
 
 .advantages-text {
-    width: 450px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;

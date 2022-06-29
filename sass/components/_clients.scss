@@ -1,9 +1,12 @@
 /* Постоянные клиенты */
 
-.clients-list{
+.clients-list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .clients-list li {
@@ -36,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 210px;
+    // width: 210px;
     height: 90px;
     margin-bottom: 30px;
     border: 1px solid #AFB1B8;
