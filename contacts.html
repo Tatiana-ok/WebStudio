@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./dist/main.min.css">
 </head>
 <body>
     <header>
@@ -63,8 +63,18 @@
             <div class="container">
                 <h1 style="text-align: center;">Контакты</h1>
                 <div class="list-of-contacts">
-                    <!-- <div id="map"></div> -->
-                    <img class="map" src="./image/Contacts/map.PNG"/>
+                    <div class="contact-you">
+                        <h2 class="contact-you-title">Мы свяжемся с Вами</h2>
+                        <form class="contacts-form" action="">
+                            <label for="name">Ваше имя*</label>
+                            <input id="name" type="text" class="contact-input">
+                            <label for="number">Телефон*</label>
+                            <input id="number" type="text" class="contact-input">
+                            <label for="email">Email</label>
+                            <input id="email" type="text" class="contact-input">
+                            <input type="submit" value="Отправить" class="send-contacts-btn"/>
+                        </form>
+                    </div>
                     <div>
                         <p class="contact-text">График роботы: ПН-ПТ: 09:00 - 18:00</p>
                         <address>
